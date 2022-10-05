@@ -1,0 +1,37 @@
+#page {
+    display: none;
+}
+
+#loading-screen {
+    position: absolute;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+#loading-screen .loading-background {
+    background-color: white;
+}
+
+#loading-screen .loading-circle {
+    width: 120px;
+    height: 120px;
+    border: 16px solid #f0f0f0;
+    border-top: 16px solid #ff0000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loading-screen .loading-text {
+    font-family: sans-serif;
+    color: gray;
+    font-size: 2em;
+    padding: 5px;
+    margin: auto;
+}
